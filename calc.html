@@ -1,0 +1,66 @@
+<html> 
+<head> 
+	<script type="text/javascript" src="util.js"></script>
+	<style> 
+		.title
+		{ 
+			margin-bottom: 10px; 
+			text-align:center; 
+			width: 15%; 
+		} 
+
+		input[type="button"] 
+		{ 
+			background-color: #c3c3c3;
+			border: none;
+			border-radius: 10px; 
+			width:100%;
+			padding: 10px;
+		} 
+
+		input[type="text"] 
+		{ 
+			border: solid black 2px; 
+			width:100%;
+			height: 50px;
+		}
+		td
+		{
+			padding: 5px;
+			border: none;
+		}
+	</style> 
+</head> 
+<body> 
+	<div class = title >Calculator</div> 
+	<table border="3"> 
+		<tr> 
+			<td colspan="4"><input type="text" id="result"/></td>
+		</tr> 
+		<tr> 
+			<td><input type="button" value="1" onclick="display('1')"/> </td> 
+			<td><input type="button" value="2" onclick="display('2')"/> </td> 
+			<td><input type="button" value="3" onclick="display('3')"/> </td> 
+			<td><input type="button" value="+" onclick="display('+')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="4" onclick="display('4')"/> </td> 
+			<td><input type="button" value="5" onclick="display('5')"/> </td> 
+			<td><input type="button" value="6" onclick="display('6')"/> </td> 
+			<td><input type="button" value="-" onclick="display('-')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="7" onclick="display('7')"/> </td> 
+			<td><input type="button" value="8" onclick="display('8')"/> </td> 
+			<td><input type="button" value="9" onclick="display('9')"/> </td> 
+			<td><input type="button" value="*" onclick="display('*')"/> </td> 
+		</tr> 
+		<tr> 
+			<td><input type="button" value="C" onclick="clearscreen()"/> </td>
+			<td><input type="button" value="0" onclick="display('0')"/> </td> 
+			<td><input type="button" value="=" onclick="solve()"/> </td> 
+			<td><input type="button" value="/" onclick="display('/')"/> </td> 
+		</tr> 
+	</table> 
+</body> 
+</html> 
